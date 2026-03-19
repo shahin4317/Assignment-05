@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Issue Tracker</title>
+    <!-- tailwind and daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- geist font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- icons from cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    
+
+    <section class="card min-h-screen max-w-md bg-white mx-auto rounded-2xl shadow-2xl pt-20 mt-40 mb-40">
+    
+    <div class=" ">
+        
+        <!-- image -->
+       <img class="mx-auto mb-3 translate-y-4" src="./assets/github-logo.png" alt="">
+
+        <!-- text -->
+        <div class="text-center mt-6">
+            <h1 class="font-bold text-lg">GitHub Issues Tracker</h1>
+            <p class="text-sm text-gray-400">Sign in to manage your issues</p>
+        </div>
+
+    </div>
+
+    <div class="m-5 ">
+        <div class="">
+            <p>Username</p>
+            <input id="inputUsername" class="input rounded-xl w-full " type="" placeholder="Enter Username">
+            <p class="text-green-300" >Default: admin</p>
+        </div>
+        <div>
+            <p>Password</p>
+            <input id="inputPassword" class="input rounded-xl w-full" type="text" placeholder="Enter Password">
+            <p class="text-green-300">Default: admin123</p>
+        </div>
+        <button id="input-btn" class="btn btn-primary w-full rounded-md mt-4">Sign In</button>
+    </div>
+    <!-- information section -->
+    <div class="space-y-8 flex flex-col text-center items-center">
+        <div>
+            <p>OR</p>
+        </div>
+        <div>
+            <p class="text-gray-400">Demo Credentials</p>
+        </div>
+        <div class="bg-gray-100 rounded-lg p-5 w-100">
+            <p><span class="font-semibold">Username: </span>admin</p>
+            <p><span class="font-semibold">Password: </span>admin123</p>
+        </div>
+
+    </div>
+
+
+</section>
+<script src="./script/script.js"></script>
+
+
+</body>
+</html>
