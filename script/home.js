@@ -1,4 +1,4 @@
-let loadAllIssues =[]
+let allIssues =[]
 const loadAllIssue = ()=>{
     fetch("https://phi-lab-server.vercel.app/api/v1/lab/issues")
     .then((res) => res.json())
@@ -176,16 +176,20 @@ const filterIssues = (type) => {
 }
 
 const setActiveBtn = (type) => {
-    document.getElementById("all-btn").classList.remove("btn-active")
-    document.getElementById("open-btn").classList.remove("btn-active")
-    document.getElementById("closed-btn").classList.remove("btn-active")
+    const buttons = ["all", "open", "closed"]
 
-    document.getElementById(type + "-btn").classList.add("btn-active")
+    buttons.forEach(btn => {
+        document.getElementById(btn + "-btn").classList.remove("btn-primary")
+        document.getElementById(btn + "-btn").classList.add("btn-outline")
+    })
+
+    document.getElementById(type + "-btn").classList.remove("btn-outline")
+    document.getElementById(type + "-btn").classList.add("btn-primary")
 }
 
 
 
 
-
+setActiveBtn('all')
 
 loadAllIssue()
