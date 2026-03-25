@@ -1,11 +1,14 @@
 let allIssues =[]
 const loadAllIssue = ()=>{
+    
     fetch("https://phi-lab-server.vercel.app/api/v1/lab/issues")
+   
     .then((res) => res.json())
     .then((data)=> {
         allIssues = data.data
         displayIssue(allIssues)
         displayIssue(data.data)
+        
         
     })
 }
