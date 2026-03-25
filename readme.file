@@ -1,0 +1,18 @@
+1. What is the difference between var, let, and const?
+ Ans : var=1. Function scoped,2.Hoisted (default value = undefined).
+ let = 1.Block scoped, 2.Re-assign possible, but re-declare not allowed.
+ const = 1.Block scoped, 2.Re-assign & re-declare not allowed.
+
+2. What is the spread operator (...)?
+Ans : This operator (...) is used to expand (spread out) elements of an array or object into individual elements.
+
+3. What is the difference between map(), filter(), and forEach()?
+Ans : map = 1. Creates a new array .
+filter = 1. Returns elements that match condition.
+forEach = 1. Used to loop.
+
+4. What is an arrow function?
+Ans : Arow function is a shorter way to write a function in JavaScript using =>.
+
+5. What are template literals?
+Ans : Template literals are strings written with backticks that allow variables and multi-line text.
